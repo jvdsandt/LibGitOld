@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "LibGit-FileSystem-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"store",
+		"lgitRepo"
+	],
+	"name" : "LGitCommitStoreTest",
+	"type" : "normal"
+}
