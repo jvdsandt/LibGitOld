@@ -1,0 +1,4 @@
+accessing
+isFile
+
+	^reference isFile

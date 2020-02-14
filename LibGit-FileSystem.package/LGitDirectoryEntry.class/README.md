@@ -1,0 +1,1 @@
+Instances of this class represent a Git tree or object.

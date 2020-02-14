@@ -1,0 +1,4 @@
+abstract
+basicIsSymlink: aNode
+	^false
+	
