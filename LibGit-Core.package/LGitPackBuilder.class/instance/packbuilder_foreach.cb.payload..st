@@ -2,6 +2,6 @@ libgit-calls
 packbuilder_foreach: pb cb: cb payload: payload
 	
 	^ self
-		call:
-			#(LGitReturnCodeEnum git_packbuilder_foreach #(self , LGitPackbuilderForeachCallback cb , LGitPackbuilderForeachPayload * payload))
+		ffiCallSafely:
+			#(LGitReturnCodeEnum git_packbuilder_foreach #(self , LGitPackbuilderForeachCallback cb ,  void *payload))
 		options: #(optMayGC optCoerceNilToNull)

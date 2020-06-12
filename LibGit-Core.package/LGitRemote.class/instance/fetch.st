@@ -1,10 +1,12 @@
 operations
 fetch
-	self create.
-		
+	self isReady ifFalse: [ self create ].
+
 	self withReturnHandlerDo: [ 
 		self
 			remote_fetch: self
-			refspecs: nil
-			opts: LGitFetchOptions defaults
+			refspecs: self ffiNull handle
+			opts: (self ffiLibrary uniqueInstance fetchOptionsStructureClass defaults
+				callbacks: self ffiLibrary uniqueInstance remoteCallbacksStructureClass defaults;
+				yourself)
 			reflog_message: nil ]

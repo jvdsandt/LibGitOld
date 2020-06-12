@@ -1,7 +1,7 @@
 libgit-calls
-remote_connect: remote direction: direction callbacks: remtoeCallbacks
+remote_connect: remote direction: direction callbacks: remoteCallbacks
 	
 	^ self
-		call:
+		ffiCallSafely:
 			#(LGitReturnCodeEnum git_remote_connect #(self , LGitDirectionEnum direction , LGitRemoteCallbacks * remoteCallbacks))
 		options: #()

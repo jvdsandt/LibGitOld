@@ -1,14 +1,19 @@
 {
-	"category" : "LibGit-Core-FFI-Structs",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "LGitDiffHunk",
-	"pools" : [
-		 ],
 	"super" : "LGitExternalStructure",
-	"type" : "normal" }
+	"category" : "LibGit-Core-FFI-Structs",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Char128",
+		"OFFSET_PRIM_HEADER",
+		"OFFSET_PRIM_HEADER_LEN",
+		"OFFSET_PRIM_NEW_LINES",
+		"OFFSET_PRIM_NEW_START",
+		"OFFSET_PRIM_OLD_LINES",
+		"OFFSET_PRIM_OLD_START"
+	],
+	"instvars" : [ ],
+	"name" : "LGitDiffHunk",
+	"type" : "normal"
+}

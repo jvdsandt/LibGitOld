@@ -1,5 +1,4 @@
 system startup
 startUp: isImageStarting
 
-	isImageStarting
-		ifTrue: [ Initialized := false ]
+	isImageStarting ifTrue: [ self uniqueInstance initializeLibGit2 ]

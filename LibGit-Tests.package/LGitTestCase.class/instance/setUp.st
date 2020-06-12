@@ -1,4 +1,4 @@
 running
 setUp
-	LGitGlobal checkInitialized.
+	super setUp.
 	LGitTestRepository tearDown

@@ -1,4 +1,4 @@
 libgit-fields
 prim_header_len
 	"This method was automatically generated"
-	^handle signedLongAt: 17
+	^handle platformSizeTAt: OFFSET_PRIM_HEADER_LEN

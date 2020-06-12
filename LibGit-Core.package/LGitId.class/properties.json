@@ -1,14 +1,14 @@
 {
-	"category" : "LibGit-Core-CoreObjects",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
-	"commentStamp" : "",
-	"instvars" : [
-		 ],
-	"name" : "LGitId",
-	"pools" : [
-		 ],
+	"commentStamp" : "<historical>",
 	"super" : "LGitExternalStructure",
-	"type" : "normal" }
+	"category" : "LibGit-Core-CoreObjects",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Byte20",
+		"OFFSET_PRIM_ID"
+	],
+	"instvars" : [ ],
+	"name" : "LGitId",
+	"type" : "normal"
+}
